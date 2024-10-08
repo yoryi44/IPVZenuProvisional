@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/fontobarraherramientas">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/FullscreenThemeView">
+
+            <TextView
+                android:text="INFORME ENCUESTAS"
+                android:id="@+id/tvTituloModulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/titulo_modulos"
+                android:textColor="@color/colorPrimary"/>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/llContenedorInforeEncuestas"
+        android:layout_width="match_parent"
+        android:layout_height="310sp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="100">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginTop="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25sp"
+                    android:layout_marginRight="25sp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edittext_rounded"
+                        android:layout_height="30sp">
+
+                        <TextView
+                            android:id="@+id/tvTextoFechaInicial"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnObtenerFechaInicial"
+                        android:layout_marginLeft="20sp"
+                        android:textColor="@android:color/white"
+                        android:text="Fecha Inicial"
+                        android:background="@drawable/buttonmsgnegative"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="30sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25sp"
+                    android:layout_marginRight="25sp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edittext_rounded"
+                        android:layout_height="30sp">
+
+                        <TextView
+                            android:id="@+id/tvTextoFechaFinal"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnObtenerFechaFinal"
+                        android:layout_marginLeft="20sp"
+                        android:textColor="@android:color/white"
+                        android:text="Fecha Final"
+                        android:background="@drawable/buttonmsgnegative"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="30sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_marginTop="30sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"
+                    android:text="Numero Encuestas"/>
+
+                <LinearLayout
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:layout_width="170sp"
+                    android:layout_height="1sp"/>
+
+                <TextView
+                    android:id="@+id/tvCantidadEncuestas"
+                    android:gravity="center"
+                    android:layout_marginTop="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="30sp"
+                    android:text=""/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:background="@mipmap/fondofooter"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- BOTON DE ACCION DEL MODULO -->
+            <Button
+                android:id="@+id/btnConsultarDialogoInformeEncuestas"
+                android:layout_width="130sp"
+                android:layout_height="40sp"
+                android:layout_marginBottom="5sp"
+                android:layout_marginRight="20sp"
+                android:background="@drawable/buttonmsg"
+                android:text="CONSULTAR"
+                android:textColor="@android:color/white" />
+
+            <!-- BOTON DE ACCION DEL MODULO -->
+            <Button
+                android:id="@+id/btnCerrarDialogoInformeEncuestas"
+                android:layout_width="130sp"
+                android:layout_height="40sp"
+                android:layout_marginBottom="5sp"
+                android:background="@drawable/buttonmsgnegative"
+                android:text="CERRAR"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

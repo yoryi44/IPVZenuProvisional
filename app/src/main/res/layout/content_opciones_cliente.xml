@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".OpcionesClienteActivity">
+
+    <LinearLayout
+        android:id="@+id/llContenidoVistaPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llInformacionClienteCabecera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvLabelRazonSocial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <!-- Segundo Renglon de Datos -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="10sp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:id="@+id/tvLabelCodigo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Codigo"
+                        android:textColor="@color/colorGrisOscuroLetra"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvCodigoClienteInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/colorGrisOscuroLetra"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tvLabelNit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Nit"
+                        android:textColor="@color/colorGrisOscuroLetra"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvNitClienteInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text=""
+                        android:textColor="@color/colorGrisOscuroLetra"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <!-- Tercer Renglon de Datos -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="10sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvLabelNombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nombre"
+                        android:textColor="@color/colorGrisOscuroLetra"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvNombreClienteInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text=""
+                        android:textColor="@color/colorGrisOscuroLetra"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                android:id="@+id/expandableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llInformacionClienteCabecera"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llInformacionClienteCabecera2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Cuarto Renglon de Datos -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginRight="10sp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvLabelDireccion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Direccion"
+                            android:textColor="@color/colorGrisOscuroLetra"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvDireccionClienteInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15sp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text=""
+                            android:textColor="@color/colorGrisOscuroLetra"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <!-- Quinto Renglon de Datos -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginRight="10sp"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <TextView
+                            android:id="@+id/tvLabelCiudad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Ciudad"
+                            android:textColor="@color/colorGrisOscuroLetra"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvCiudadClienteInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorGrisOscuroLetra"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tvLabelTelefono"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Telefono"
+                            android:textColor="@color/colorGrisOscuroLetra"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvTelefonoClienteInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="right"
+                            android:text=""
+                            android:textColor="@color/colorGrisOscuroLetra"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <!-- Sexto Renglon de Datos -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginRight="10sp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvLabelBarrio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Barrio"
+                            android:textColor="@color/colorGrisOscuroLetra"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvBarrioClienteInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15sp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text=""
+                            android:textColor="@color/colorGrisOscuroLetra"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <!-- Septimo Renglon de Datos -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginRight="10sp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvLabelEmail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Email"
+                            android:textColor="@color/colorGrisOscuroLetra"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvEmailClienteInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15sp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text=""
+                            android:textColor="@color/colorGrisOscuroLetra"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <!-- Octavo Renglon de Datos -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginBottom="10sp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvLabelCP"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CP"
+                            android:textColor="@color/colorGrisOscuroLetra"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvCPClienteInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15sp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text=""
+                            android:textColor="@color/colorGrisOscuroLetra"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llInformacionClientePie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Primer Renglon de Datos -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:id="@+id/tvLabelCanal"
+                            android:layout_width="100sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Canal"
+                            android:textColor="@color/colorGrisOscuroLetra"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvCanalClienteInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:paddingRight="10sp"
+                            android:text=""
+                            android:textColor="@color/colorGrisOscuroLetra"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tvLabelSubcanal"
+                            android:layout_width="150sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Subcanal    "
+                            android:textColor="@color/colorGrisOscuroLetra"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvSubcanalClienteInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text=""
+                            android:textColor="@color/colorGrisOscuroLetra"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <!-- Segundo Renglon de Datos -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="15sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginBottom="10sp"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:id="@+id/tvLabelTipologia"
+                            android:layout_width="100sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Tipología"
+                            android:textColor="@color/colorGrisOscuroLetra"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvTipologiaClienteInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:paddingRight="10sp"
+                            android:text=""
+                            android:textColor="@color/colorGrisOscuroLetra"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tvLabelSegmentacion"
+                            android:layout_width="150sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Segmentación"
+                            android:textColor="@color/colorGrisOscuroLetra"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvSegmentacionClienteInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text=""
+                            android:textColor="@color/colorGrisOscuroLetra"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <!-- Tercer Renglon de Datos -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginBottom="15sp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvLabelGestion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gestión últimos 6 meses"
+                            android:textColor="@color/colorGrisOscuroLetra"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvGestionClienteInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15sp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text=""
+                            android:textColor="@color/colorGrisOscuroLetra"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llBotonExpandir"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_below="@+id/expandableLayout"
+                android:background="@android:color/transparent"
+                android:gravity="right">
+
+                <ImageButton
+                    android:id="@+id/btnExpandir"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:layout_marginRight="10sp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:src="@mipmap/botonmostrarmas" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvListaTareasCliente"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginBottom="10sp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:background="@mipmap/fondofooter"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+
+            <Button
+                android:layout_width="120sp"
+                android:layout_height="40sp"
+                android:layout_marginBottom="5sp"
+                android:layout_marginLeft="10sp"
+                android:background="@drawable/buttonmsg"
+                android:onClick="on_ClickSincronizar"
+                android:text="SINCRONIZAR"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

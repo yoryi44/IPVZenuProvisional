@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/fontobarraherramientas">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/FullscreenThemeView">
+
+            <TextView
+                android:text="CONFIGURACIÓN"
+                android:id="@+id/tvTituloModulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/titulo_modulos"
+                android:textColor="@color/colorPrimary"/>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/llContenedorInforeEncuestas"
+        android:layout_width="match_parent"
+        android:layout_height="170sp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="100">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_marginTop="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25sp"
+                    android:layout_marginRight="25sp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="2">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/rbBach"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="20dp"
+                            android:text="Batch"
+                            android:textColor="#000000" />
+
+                        <RadioButton
+                            android:id="@+id/rbUnoAUno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Uno a Uno"
+                            android:textColor="#000000" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:background="@mipmap/fondofooter"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- BOTON DE ACCION DEL MODULO -->
+            <Button
+                android:id="@+id/btnAceptarConfig"
+                android:layout_width="130sp"
+                android:layout_height="40sp"
+                android:layout_marginBottom="5sp"
+                android:layout_marginRight="20sp"
+                android:background="@drawable/buttonmsg"
+                android:text="ACEPTAR"
+                android:textColor="@android:color/white" />
+
+            <!-- BOTON DE ACCION DEL MODULO -->
+            <Button
+                android:id="@+id/btnCerrarConfig"
+                android:layout_width="130sp"
+                android:layout_height="40sp"
+                android:layout_marginBottom="5sp"
+                android:background="@drawable/buttonmsgnegative"
+                android:text="CERRAR"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

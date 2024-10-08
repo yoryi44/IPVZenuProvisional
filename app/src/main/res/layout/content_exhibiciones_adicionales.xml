@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".PrecioProductosActivity">
+
+    <LinearLayout
+        android:id="@+id/llContenidoVistaPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvLabelRazonSocial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="PRUEBA DE EL CLIENTE NUMERO 1"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- TABS DE INFORMACION DE PRECIO -->
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabsPrecioProductos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/colorPrimary"
+            app:tabMaxWidth="0dp"
+            app:tabMode="fixed" />
+
+        <!-- SEPARADOR -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/colorAccent" />
+
+        <ListView
+            android:id="@+id/lvListaAdicionales"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginBottom="10sp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:background="@mipmap/fondofooter"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <!-- BOTON DE ACCION DEL MODULO -->
+            <Button
+                android:layout_width="120sp"
+                android:layout_height="40sp"
+                android:layout_marginBottom="5sp"
+                android:background="@drawable/buttonmsg"
+                android:onClick="on_ClickAgregar"
+                android:text="Agregar"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

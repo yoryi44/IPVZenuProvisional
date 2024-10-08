@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ProductosExhibidorActivity">
+
+    <LinearLayout
+        android:id="@+id/llContenidoVistaPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvLabelRazonSocial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="PRUEBA DE EL CLIENTE NUMERO 1"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- TABS DE INFORMACION DE PRECIO -->
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabsExhibidoresProductos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/colorPrimary"
+            app:tabMaxWidth="0dp"
+            app:tabMode="fixed" />
+
+        <!-- SEPARADOR -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/colorAccent" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="100">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llTitulosPropios"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="10sp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tvLabelPropios"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:text="Productos Propios"
+                        android:textColor="@color/colorAzulLabel"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tvCantidadCarasPropiosInfo"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:gravity="center_horizontal"
+                        android:text="Caras"
+                        android:textColor="@color/colorGrisOscuroLetra"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tvPorcentajePropiosInfo"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:gravity="center_horizontal"
+                        android:text="%"
+                        android:textColor="@color/colorGrisOscuroLetra"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/flInformacionProductosPropiosExhibidores"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="visible">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/llListaPropios"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:orientation="vertical" />
+
+                    </ScrollView>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/llTitulosCompetencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="10sp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tvLabelCompetencia"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:text="Productos Competencia"
+                        android:textColor="@color/colorRojoLabel"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tvCantidadCarasCompetenciaInfo"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:gravity="center_horizontal"
+                        android:text="Caras"
+                        android:textColor="@color/colorGrisOscuroLetra"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tvPorcentajeCompetenciaInfo"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:gravity="center_horizontal"
+                        android:text="%"
+                        android:textColor="@color/colorGrisOscuroLetra"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/flInformacionProductosCompetenciaExhibidores"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/llListaCompetencia"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:orientation="vertical" />
+
+                    </ScrollView>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/llComponentesTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- INFORMACION TOTAL PROPIOS -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/tvTituloPropios"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:text="Marcas Propias"
+                    android:textColor="@color/colorAzulLabel"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvCantidadCarasPropias"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="@color/colorAzulLabel"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvPorcentajePropios"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="@color/colorAzulLabel"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <!-- INFORMACION TOTAL COMPETENCIA -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="10sp"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/tvTituloCompetencia"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:text="Marcas Competencia"
+                    android:textColor="@color/colorRojoLabel"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvCantidadCarasCompetencia"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="@color/colorRojoLabel"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvPorcentajeCompetencia"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="@color/colorRojoLabel"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llContenedorBotonesAgregarProductos"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <!-- BOTON DE ACCION DEL MODULO -->
+            <Button
+                android:layout_width="140sp"
+                android:layout_height="45sp"
+                android:layout_marginBottom="5sp"
+                android:background="@drawable/buttonmsgpropios"
+                android:onClick="on_ClickAgregarProductoPropios"
+                android:text="AGREGAR PROPIOS"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:layout_width="140sp"
+                android:layout_height="45sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="5sp"
+                android:background="@drawable/buttonmsgcompetencia"
+                android:onClick="on_ClickAgregarProductoCompetencia"
+                android:text="AGREGAR COMPETENCIA"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:background="@mipmap/fondofooter"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- BOTON DE ACCION DEL MODULO -->
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btnEditarProductosExhibidor"
+                android:layout_width="140sp"
+                android:layout_height="40sp"
+                android:layout_marginBottom="5sp"
+                android:background="@drawable/buttonmsg"
+                android:onClick="on_ClickEditarProductosExhibidor"
+                android:text="EDITAR"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnTerminarProductosExhibidor"
+                android:layout_width="140sp"
+                android:layout_height="40sp"
+                android:layout_marginBottom="5sp"
+                android:background="@drawable/buttonmsgnegative"
+                android:onClick="on_ClickTerminarProductosExhibidor"
+                android:text="CONTINUAR"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
+

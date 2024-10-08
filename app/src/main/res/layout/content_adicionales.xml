@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AgregarAdicionalActivity">
+
+
+    <LinearLayout
+        android:id="@+id/llContenidoVistaPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvLabelRazonSocial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="PRUEBA DE EL CLIENTE NUMERO 1"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="100">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_weight="0.5"
+                        android:layout_marginRight="10sp"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:textSize="@dimen/titulo_modulos"
+                            android:text="Tipo:"
+                            android:textColor="@color/colorPrimary"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="15sp"
+                        android:layout_weight="0.5"
+                        android:layout_marginRight="10sp"
+                        android:orientation="vertical"
+                        >
+                        <Spinner
+                            android:id="@+id/spTipoExhibidor"
+                            android:background="@drawable/borderectangular"
+                            android:padding="5dp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_weight="0.5"
+                        android:layout_marginRight="10sp"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:textSize="@dimen/titulo_modulos"
+                            android:text="Estado:"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/colorPrimary"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_weight="0.5"
+                        android:layout_marginTop="15sp"
+                        android:layout_marginRight="10sp"
+                        android:orientation="vertical"
+                        >
+                        <Spinner
+                            android:id="@+id/spEstado"
+                            android:background="@drawable/borderectangular"
+                            android:padding="5dp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:background="@mipmap/fondofooter"
+            android:gravity="center_vertical|right">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="100sp"
+                    android:layout_height="40sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/buttonmsg"
+                    android:onClick="on_ClickFoto"
+                    android:text="IMAGEN"
+                    android:layout_marginRight="10sp"
+                    android:textColor="@android:color/white" />
+
+
+                <!-- BOTON DE ACCION DEL MODULO -->
+                <Button
+                    android:layout_width="110sp"
+                    android:layout_height="40sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/buttonmsg"
+                    android:onClick="on_ClickGuardar"
+                    android:text="GUARDAR"
+                    android:layout_marginRight="10sp"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/btnAgregarDisponibilidad"
+                    android:layout_width="120sp"
+                    android:layout_height="40sp"
+                    android:layout_marginBottom="5sp"
+
+                    android:background="@drawable/buttonmsgnegative"
+                    android:onClick="on_ClickCancelar"
+                    android:text="CANCELAR"
+
+                    android:textColor="@android:color/white" />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

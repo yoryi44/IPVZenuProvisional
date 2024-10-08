@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F1823B</color>
+    <color name="colorPrimaryDark">#DA332E</color>
+    <color name="colorAccent">#4A4A4A</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="colorGrisOscuroLetra">#4A4A4A</color>
+    <color name="colorGrisClaroLetra">#aaa</color>
+    <color name="colorVerdeOk">#8DC73F</color>
+    <color name="colorAzulLabel">#47B3F8</color>
+    <color name="colorRojoLabel">#EE6366</color>
+    <color name="colorRojoFondo">#FFC5C6</color>
+</resources>

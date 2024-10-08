@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".LogInActivity">
+
+    <!-- VISTA CONTENIDO -->
+    <LinearLayout
+        android:id="@+id/llContenido"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="70"
+            android:background="@mipmap/fondosuperior"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTituloModulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35sp"
+                android:layout_marginTop="38sp"
+                android:text="LOGIN"
+                android:textColor="@color/colorGrisOscuroLetra"
+                android:textSize="22sp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="25sp"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginRight="50sp"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <!-- COMPONENTE USUARIO -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="24sp"
+                                android:layout_height="24sp"
+                                android:src="@mipmap/iconousuario" />
+
+                            <EditText
+                                android:id="@+id/etUsuario"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15sp"
+                                android:background="@android:color/transparent"
+                                android:hint="Usuario"
+                                android:singleLine="true"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="2sp"
+                            android:layout_marginTop="8sp"
+                            android:background="@color/colorPrimary" />
+
+                    </LinearLayout>
+
+                    <!-- COMPONENTE CLAVE -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40sp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="24sp"
+                                android:layout_height="24sp"
+                                android:src="@mipmap/iconoclave" />
+
+                            <EditText
+                                android:id="@+id/etClave"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15sp"
+                                android:background="@android:color/transparent"
+                                android:hint="Clave"
+                                android:inputType="textPassword"
+                                android:singleLine="true"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="2sp"
+                            android:layout_marginTop="8sp"
+                            android:background="@color/colorPrimary" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="60sp"
+                        android:background="@mipmap/btnentrar"
+                        android:gravity="center"
+                        android:onClick="on_ClickEntrar">
+
+                        <TextView
+                            android:id="@+id/tvEntrar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="Entrar"
+                            android:textColor="@color/colorGrisOscuroLetra"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:background="@mipmap/fondoinferior">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="20sp"
+                    android:layout_marginLeft="20sp"
+                    android:src="@mipmap/marcas" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- VISTA RESPUESTA INTERNET -->
+    <LinearLayout
+        android:id="@+id/llRespuestaInternet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/colorGrisOscuroLetra"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvMensajeSinConnexion1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30sp"
+            android:gravity="center"
+            android:text="Ups ! Lo sentimos"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30sp"
+            android:gravity="center"
+            android:src="@mipmap/imagensinconexion" />
+
+        <TextView
+            android:id="@+id/tvMensajeSinConnexion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50sp"
+            android:gravity="center"
+            android:text="No tienes conexión a \n Internet"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="200sp"
+            android:layout_height="50sp"
+            android:background="@drawable/bottonrounded"
+            android:gravity="center"
+            android:onClick="on_ClickReintentar">
+
+            <TextView
+                android:id="@+id/tvTituloBotonReintentar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REINTENTAR"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

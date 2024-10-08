@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10sp"
+            android:background="@android:color/transparent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivProductoAgotado"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/iconosinimagen" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10sp"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvNombreExhibidor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginTop="10sp"
+                    android:textColor="@color/colorGrisOscuroLetra" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="70"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/llComponenteEstadoExhibicion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivBotonExhibicionMedida"
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:adjustViewBounds="true"
+                        android:src="@mipmap/iconook_gris" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llComponenteModificacionExhibicion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivBotonModificarExhibicion"
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:adjustViewBounds="true"
+                        android:src="@mipmap/iconoeditar" />
+
+                    <ImageView
+                        android:layout_marginLeft="15sp"
+                        android:id="@+id/ivBotonEliminarExhibicion"
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:adjustViewBounds="true"
+                        android:src="@mipmap/iconoeliminar" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorGrisOscuroLetra">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

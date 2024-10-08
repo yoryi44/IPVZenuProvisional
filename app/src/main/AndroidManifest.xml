@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="co.com.celuweb.ipv">
+
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.ACTION_IMAGE_CAPTURE" />
+	<uses-permission android:name="android.permission.CAMERA" />
+
+	<application
+		android:allowBackup="true"
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name"
+		android:roundIcon="@mipmap/ic_launcher_round"
+		android:supportsRtl="true"
+		android:theme="@style/AppTheme">
+		<activity
+			android:name=".SplashActivity"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".LogInActivity"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="stateHidden" />
+		<activity
+			android:name=".PrincipalActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"
+			android:windowSoftInputMode="stateHidden" />
+		<activity
+			android:name=".OpcionesClienteActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"
+			android:windowSoftInputMode="stateHidden" />
+		<activity
+			android:name=".AgotadosActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"
+			android:windowSoftInputMode="adjustPan" />
+		<activity
+			android:name=".BusquedaProductosActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"
+			android:windowSoftInputMode="stateHidden" />
+		<activity
+			android:name=".ExhibicionProductosActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"
+			android:windowSoftInputMode="stateHidden" />
+		<activity
+			android:name=".PrecioProductosActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"
+			android:windowSoftInputMode="stateHidden" />
+
+
+		<activity
+			android:name=".PreciosDisponibilidadActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"
+			android:windowSoftInputMode="stateHidden" />
+		<activity
+			android:name=".CrearExhibicionActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"
+			android:windowSoftInputMode="stateHidden" />
+		<activity
+			android:name=".FotosActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"
+			android:windowSoftInputMode="stateHidden" />
+		<activity
+			android:name=".TemperaturaActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"
+			android:windowSoftInputMode="stateHidden" />
+		<activity
+			android:name=".ProductosExhibidorActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"
+			android:windowSoftInputMode="stateHidden" />
+		<activity
+			android:name=".PreguntaFormatoGeneralActivacionActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"
+			android:windowSoftInputMode="stateHidden" />
+		<activity
+			android:name=".FotosActivacionActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"
+			android:windowSoftInputMode="stateHidden" />
+		<activity
+			android:name=".ListaFormatoGeneralActivacionActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"
+			android:windowSoftInputMode="stateHidden" />
+		<activity
+			android:name=".ProductosFormatoGeneralActivacionActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"
+			android:windowSoftInputMode="stateHidden" />
+		<activity
+			android:name=".ListaMedicionGeneralActivacionActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"
+			android:windowSoftInputMode="stateHidden" />
+		<activity
+			android:name=".CrearProductoCompetenciaActivity"
+			></activity>
+
+		<activity
+			android:name=".AgregarAdicionalActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"
+			android:windowSoftInputMode="stateHidden" />
+		<activity
+			android:name=".ActivacionActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"
+			android:windowSoftInputMode="stateHidden" />
+		<activity
+			android:name=".AgregarProcutoCompretenciaActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"
+			android:windowSoftInputMode="stateHidden" />
+		<activity
+			android:name=".ExhibicionesAdicionalesActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"
+			android:windowSoftInputMode="stateHidden" />
+
+		<activity
+			android:name=".OpcionesTareasActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"
+			android:windowSoftInputMode="stateHidden" />
+	</application>
+
+</manifest>

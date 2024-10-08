@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llFondoProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:longClickable="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10sp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/ivProductoAgotado"-->
+            <!--                android:layout_width="30sp"-->
+            <!--                android:layout_height="30sp"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:adjustViewBounds="true"-->
+            <!--                android:src="@mipmap/iconosinimagen" />-->
+            <Button
+                android:id="@+id/ivNoVenta"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginBottom="5sp"
+                android:layout_marginTop="5sp"
+                android:background="@drawable/buttonmsgnegative"
+                android:text="N"
+                android:textColor="@android:color/white" />
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/ivNoVenta"-->
+            <!--                android:layout_width="30sp"-->
+            <!--                android:layout_height="30sp"-->
+            <!--                android:layout_marginBottom="10dp"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:adjustViewBounds="true"-->
+            <!--                android:src="@mipmap/iconook_gris" />-->
+
+            <Button
+                android:id="@+id/ivAgotado"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginBottom="5sp"
+                android:background="@drawable/buttonmsgnegative"
+                android:text="A"
+                android:textColor="@android:color/white" />
+            <!--            <ImageView-->
+            <!--                android:id="@+id/ivAgotado"-->
+            <!--                android:layout_width="30sp"-->
+            <!--                android:layout_height="30sp"-->
+            <!--                android:adjustViewBounds="true"-->
+            <!--                android:src="@mipmap/iconook_gris" />-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10sp"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="45"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvNombreProducto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginTop="10sp"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorGrisOscuroLetra" />
+
+                <TextView
+                    android:id="@+id/tvPrecioProducto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="5sp"
+                    android:textStyle="bold"
+                    android:textSize="11sp"
+                    android:textColor="@color/colorGrisOscuroLetra" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="55"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:id="@+id/llBordeCantidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="38sp"
+                    android:layout_margin="10sp"
+                    android:layout_weight="75"
+                    android:background="@drawable/edittext_rounded"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp">
+
+                    <EditText
+                        android:id="@+id/etCantidadAgotado"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:inputType="number"
+                        android:maxLength="6"
+
+                        android:singleLine="true"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:textColorHint="@color/colorGrisClaroLetra"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivBotonCopiarCantidadAgotados"
+                    android:layout_width="35sp"
+                    android:layout_height="35sp"
+                    android:layout_weight="25"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/iconook_gris" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorGrisOscuroLetra">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

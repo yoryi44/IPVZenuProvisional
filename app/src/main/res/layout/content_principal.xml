@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".PrincipalActivity"
+    tools:showIn="@layout/app_bar_principal">
+
+    <LinearLayout
+        android:id="@+id/llContenidoVistaPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48sp"
+            android:layout_margin="10sp"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10sp"
+                android:layout_marginTop="5sp"
+                android:layout_weight="4"
+                android:background="@drawable/edittext_rounded"
+                android:gravity="center_vertical"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp">
+
+                <EditText
+                    android:id="@+id/etOpcionBusqueda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:maxLength="25"
+                    android:textSize="13sp"
+                    android:singleLine="true" />
+
+                <ImageButton
+                    android:id="@+id/ibFiltroCliente"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:background="@android:color/transparent"
+                    android:src="@mipmap/iconobusqueda" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5sp"
+                android:layout_weight="6"
+                android:background="@drawable/edittext_rounded"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp">
+
+                <Spinner
+                    android:id="@+id/spDiasSemana"
+                    style="@style/ThemeSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llCheckVisitados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/cbVisitados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:text="Visitados"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lvListaClientes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"/>
+
+<!--        <ListView-->
+<!--            android:id="@+id/lvListaClientes"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginBottom="10sp"-->
+<!--            android:layout_marginLeft="10sp"-->
+<!--            android:layout_marginRight="10sp"-->
+<!--            android:layout_weight="1" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:background="@mipmap/fondofooter">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

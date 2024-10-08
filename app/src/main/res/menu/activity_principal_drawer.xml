@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Clientes"
+            android:icon="@mipmap/iconoclientes"
+            android:title="Clientes" />
+        <item
+            android:id="@+id/nav_Configuracion"
+            android:icon="@mipmap/iconoconfiguracion"
+            android:title="Configuración" />
+        <item
+            android:id="@+id/nav_Sincronizar"
+            android:icon="@mipmap/iconosincronizar"
+            android:title="Sincronizar" />
+        <item
+            android:id="@+id/nav_IniciarDia"
+            android:icon="@mipmap/iconoiniciardia"
+            android:title="Iniciar día" />
+        <item
+            android:id="@+id/nav_EnviarInfo"
+            android:icon="@mipmap/iconoenviarinfo"
+            android:title="Enviar info" />
+        <item
+            android:id="@+id/nav_CerrarSesion"
+            android:icon="@mipmap/iconocerrarsesion"
+            android:title="Cerrar Sesión" />
+    </group>
+
+</menu>

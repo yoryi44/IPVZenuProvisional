@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".TemperaturaActivity">
+
+    <LinearLayout
+        android:id="@+id/llContenidoVistaPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvLabelRazonSocial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="PRUEBA DE EL CLIENTE NUMERO 1"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100sp"
+                    android:layout_marginBottom="10sp"
+                    android:orientation="horizontal"
+                    android:weightSum="11">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_margin="10sp"
+                        android:layout_weight="3">
+
+                        <ImageView
+                            android:id="@+id/ivImagenExhibidor"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="80sp"
+                            android:adjustViewBounds="true"
+                            android:background="@color/colorGrisClaroLetra"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="4"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvMensaje1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="11sp"
+                            android:text="Exhibición"/>
+
+                        <TextView
+                            android:id="@+id/tvMensaje2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="11sp"
+                            android:text="Refrigerador"/>
+
+                        <TextView
+                            android:id="@+id/tvMensaje3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="11sp"
+                            android:text="Principal"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4">
+
+                        <LinearLayout
+                            android:layout_width="80sp"
+                            android:layout_height="50sp"
+                            android:background="@drawable/borderectangular"
+                            android:onClick="on_ClickCopiarValorAnterior"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="11sp"
+                                android:text="Copiar registro"/>
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="11sp"
+                                android:text="anterior"/>
+
+                            <TextView
+                                android:id="@+id/tvCantidadTemperaturaAnterior"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="11sp"
+                                android:text="4ºC"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tvPreguntaParte1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="¿Cuál es la temperatura"/>
+
+                    <TextView
+                        android:id="@+id/tvPreguntaParte2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="del refrigerador?"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etCantidadGrados"
+                        android:layout_width="60sp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:maxLength="3"
+                        android:textColor="@color/colorAzulLabel"
+                        android:inputType="numberSigned"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tvIndicadorGrados"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ºC"
+                        android:textColor="@color/colorAzulLabel"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:background="@mipmap/fondofooter"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- BOTON DE ACCION DEL MODULO -->
+            <Button
+                android:layout_width="120sp"
+                android:layout_height="40sp"
+                android:layout_marginBottom="5sp"
+                android:background="@drawable/buttonmsgnegative"
+                android:onClick="on_ClickContinuarExhibidor"
+                android:text="CONTINUAR"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
+
